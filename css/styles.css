@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 3px #000;
+}	
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+    width: 100%;
+    background-color: #B2FEFF;
+	
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+    color: #000;
+}
+h1{
+	font-size: 4rem;	
+	font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background-color: #B2FEFF;
+    color: #1E7E7F;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: 'Bree Serif', serif;
+    color: white;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: 'Bree Serif', serif;
+	color: #B2FEFF;	
+}
+p, li, a{
+	font-weight: 800;
+	font-family: 'Open Sans Condensed', sans-serif;
+    color: #B2FEFF;
+    
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+    
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.5rem;
+    
+}	
+
+/***********************************
+					Layout
+***********************************/
+@media screen and (min-width:1080px){
+    /* 4 columns*/
+    .nav, .main, .two, .three{
+        display: block;
+        float: left;
+        width: 25%;
+    }
+    .navbar li {
+        width: 100%;
+    }
+    h1{
+        font-size:5rem;
+    }
+}
+
+@media screen and (min-width:720px)and (max-width: 1079px){
+   /*3 columns*/
+    .nav, .main, .two, .three{
+        display: block;
+        float: left;
+        
+    }
+    .nav{
+        width: 100%;
+        
+    }
+    .navbar li{
+        width: 25%;
+        
+    }
+    .main{
+        width: 50%;
+    }
+    .two, .three{
+        width: 25%;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:500px)and (max-width: 719px){
+    .nav, .main, .two, .three{
+        display: block;
+    }
+    .navbar li{
+        width: 25%;
+    }
+    .main{
+        width: 100%;
+    }
+    .two, .three{
+        width: 50%;
+        float: left;
+    }
+}
+@media screen and (max-width: 499px){
+    .main, .two, .three{
+        display: block;
+        width: 100%;
+    }
+    .navbar li{
+        width: 50%;
+    }
+}
+
+/*  S O M E  C O L O U R S  */
+
+.two, .three{
+    background-color: #04C1C4;
+    border: 5px solid #B2FEFF;
+}
+.two h3, .three h3{
+    color: #B2FEFF;
+}
+
+.main{
+    border: 5px solid #B2FEFF;
+}
+
+.main p, .two p, .three p{
+    color: #fff;
+}
+
+.nav a{
+    border: 5px solid #B2FEFF
+}
+
+
+.wrapper{
+	
+}
+.masthead{
+	
+}
+.nav{
+    
+}
+.navbar{
+	
+}
+.main{
+	background-color: #1E7E7F;
+}
+.sidebar{
+    
+}
+.footer{
+	float: left;
+    width: 100%;
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+	/*width: 240px;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+    background-color: #04C1C4;
+	
+    /*background-color: #e4e4e4;  1/5*/
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+    color: #fff;
+    background-color: #1E7E7F;
+	/*background-color: #333;   4/5*/
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #B2FEFF;	
+	background-color: #1E7E7F;
+}
